@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIT Warangal Departments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    /* Header */
+    .header {
+      background: #045396;
+      text-align: center;
+      padding: 40px 0 20px 0;
+      position: relative;
+    }
+    .header h1 {
+      color: #fff;
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: bold;
+    }
+    .header img {
+      width: 120px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    /* Nav Bar */
+    .navbar {
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 18px 28px;
+      display: block;
+      font-size: 1.05em;
+      transition: background 0.2s;
+    }
+    .navbar a:hover, .navbar .active {
+      background: #004080;
+      color: #ffe600;
+    }
+    /* Content Area */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      padding: 0 18px;
+    }
+    h2 {
+      color: #045396;
+      text-align: left;
+    }
+    /* Departments Grid */
+    .departments {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 30px;
+    }
+    .dept-card {
+      background: #f8f8f8;
+      border-radius: 8px;
+      padding: 32px 20px 24px 20px;
+      box-shadow: 0 3px 12px rgba(4,83,150,0.09);
+      text-align: center;
+      font-size: 1.07em;
+      color: #045396;
+      border: 2px solid #e5e5e5;
+      cursor: pointer;
+      transition: 
+        transform 0.25s cubic-bezier(.26,.86,.44,.98),
+        box-shadow 0.25s cubic-bezier(.26,.86,.44,.98),
+        border-color 0.2s;
+    }
+    .dept-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 10px 24px rgba(4,83,150,0.14);
+      border-color: #045396;
+      background: #e6f0ff;
+      color: #0072e6;
+    }
+    .dept-name {
+      font-size: 1.26em;
+      font-weight: bold;
+      margin-bottom: 13px;
+    }
+    .dept-desc {
+      color: #355e91;
+      font-size: 0.98em;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>National Institute of Technology Warangal</h1>
+    <img src="menu.png" alt="NITW Logo">
+  </div>
+  <nav class="navbar">
+      
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="department.html">Departments</a>
+    <a href="admission.html">Admission</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="container">
+    <h2>Departments</h2>
+    <div class="departments">
+      <div class="dept-card">
+        <div class="dept-name">Computer Science & Engineering</div>
+        <div class="dept-desc">Programming, Data Science, AI, Systems & Networks</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Electronics & Communication Engineering</div>
+        <div class="dept-desc">Communication Systems, VLSI, Embedded Systems, Signal Processing</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Mechanical Engineering</div>
+        <div class="dept-desc">Design, Manufacturing, Thermal Engineering</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Civil Engineering</div>
+        <div class="dept-desc">Structures, Geotechnics, Construction Management</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Electrical Engineering</div>
+        <div class="dept-desc">Power Systems, Control, Robotics</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Chemical Engineering</div>
+        <div class="dept-desc">Chemical Processes, Biotech, Material Science</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Metallurgical & Materials Engineering</div>
+        <div class="dept-desc">Materials Science, Metallurgy, Nano Materials</div>
+      </div>
+      <div class="dept-card">
+        <div class="dept-name">Biotechnology</div>
+        <div class="dept-desc">Bioprocess, Molecular Biology, Genetics, Bioinformatics</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
